@@ -1,7 +1,7 @@
 {
-  "name": "jlkasdfalks",
-  "version": "0.0.0",
+  "name": "2000s-website",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,10 +13,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.7",
-    "vite": "^8.0.16",
-    "vite-plugin-vue-devtools": "^8.1.2"
-  },
-  "engines": {
-    "node": "^22.18.0 || >=24.12.0"
+    "vite": "^8.1.0"
   }
 }
