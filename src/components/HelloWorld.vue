@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
+import sparkleCoffeeRat from '../assets/sparkleCoffeeRat.gif'
 
 const count = ref(0)
 </script>
@@ -11,9 +12,7 @@ const count = ref(0)
   <section id="center">
     <div class="hero">
       <!-- TODO:: rat graphic here, sparkly one -->
-      <img :src="heroImg" class="base" width="170" height="179" alt="" />
-      <img :src="vueLogo" class="framework" alt="Vue logo" />
-      <img :src="viteLogo" class="vite" alt="Vite logo" />
+      <img :src="sparkleCoffeeRat" width="170" />
     </div>
     <div>
       <h1>Rae's Website</h1>
@@ -38,13 +37,11 @@ const count = ref(0)
       <ul>
         <li>
           <a href="https://vite.dev/" target="_blank">
-            <img class="logo" :src="viteLogo" alt="" />
             Personal
           </a>
         </li>
         <li>
           <a href="https://vuejs.org/" target="_blank">
-            <img class="button-icon" :src="vueLogo" alt="" />
             Professional
           </a>
         </li>
@@ -76,7 +73,6 @@ const count = ref(0)
         <li>
           <a href="https://x.com/vite_js" target="_blank">
             <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#x-icon"></use>
             </svg>
             Fill in form
           </a>
@@ -84,7 +80,6 @@ const count = ref(0)
         <li>
           <a href="https://bsky.app/profile/vite.dev" target="_blank">
             <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#bluesky-icon"></use>
             </svg>
             Some cool pics
           </a>
