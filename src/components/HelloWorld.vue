@@ -37,13 +37,11 @@ const count = ref(0)
       <ul>
         <li>
           <a href="https://vite.dev/" target="_blank">
-            <img class="logo" :src="viteLogo" alt="" />
             Personal
           </a>
         </li>
         <li>
           <a href="https://vuejs.org/" target="_blank">
-            <img class="button-icon" :src="vueLogo" alt="" />
             Professional
           </a>
         </li>
@@ -75,7 +73,6 @@ const count = ref(0)
         <li>
           <a href="https://x.com/vite_js" target="_blank">
             <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#x-icon"></use>
             </svg>
             Fill in form
           </a>
@@ -83,7 +80,6 @@ const count = ref(0)
         <li>
           <a href="https://bsky.app/profile/vite.dev" target="_blank">
             <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#bluesky-icon"></use>
             </svg>
             Some cool pics
           </a>
