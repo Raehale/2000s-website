@@ -1,19 +1,21 @@
 <script setup>
 import { ref } from 'vue'
 import viteLogo from '../assets/vite.svg'
-import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
+import sparkleCoffeeRat from '../assets/sparkleCoffeeRat.gif';
+import purpleCd from '../assets/purple-cd.png';
+import ratFace from '../assets/purple-rat-face.png';
 
 const count = ref(0)
 </script>
 
 <template>
+  <img :src="purpleCd" width="400" class="cd-graphic" />
+
   <section id="center">
     <div class="hero">
       <!-- TODO:: rat graphic here, sparkly one -->
-      <img :src="heroImg" class="base" width="170" height="179" alt="" />
-      <img :src="vueLogo" class="framework" alt="Vue logo" />
-      <img :src="viteLogo" class="vite" alt="Vite logo" />
+      <img :src="sparkleCoffeeRat" width="170" />
     </div>
     <div>
       <h1>Rae's Website</h1>
@@ -28,70 +30,76 @@ const count = ref(0)
   <div class="ticks"></div>
 
   <section id="next-steps">
-    <div id="docs">
-      <svg class="icon" role="presentation" aria-hidden="true">
-        <use href="/icons.svg#documentation-icon"></use>
-      </svg>
-      <h2>About Me</h2>
+    <div id="docs" class="window-section light-pink">
+      <div class="window-header">
+        <h2>About Me</h2>
+        <svg class="icon" role="presentation" aria-hidden="true">
+          <use href="/icons.svg#social-icon"></use>
+        </svg>
+      </div>
       <!-- TODO:: that sucks -->
-      <p>My personal and professional thingies,, like stuffs.</p>
-      <ul>
-        <li>
-          <a href="https://vite.dev/" target="_blank">
-            <img class="logo" :src="viteLogo" alt="" />
-            Personal
-          </a>
-        </li>
-        <li>
-          <a href="https://vuejs.org/" target="_blank">
-            <img class="button-icon" :src="vueLogo" alt="" />
-            Professional
-          </a>
-        </li>
-      </ul>
+       <div class="window-body">
+        <p>My personal and professional thingies,, like stuffs.</p>
+        <ul>
+          <li>
+            <a href="https://vite.dev/" target="_blank">
+              Personal
+            </a>
+          </li>
+          <li>
+            <a href="https://vuejs.org/" target="_blank">
+              Professional
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="social">
-      <svg class="icon" role="presentation" aria-hidden="true">
-        <use href="/icons.svg#social-icon"></use>
-      </svg>
-      <h2>Connect with me</h2>
-      <p>Let me know what's goin on, how you feelin?</p>
-      <ul>
-        <li>
-          <a href="https://github.com/vitejs/vite" target="_blank">
-            <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#github-icon"></use>
-            </svg>
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://chat.vite.dev/" target="_blank">
-            <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#discord-icon"></use>
-            </svg>
-            Discord
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/vite_js" target="_blank">
-            <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#x-icon"></use>
-            </svg>
-            Fill in form
-          </a>
-        </li>
-        <li>
-          <a href="https://bsky.app/profile/vite.dev" target="_blank">
-            <svg class="button-icon" role="presentation" aria-hidden="true">
-              <use href="/icons.svg#bluesky-icon"></use>
-            </svg>
-            Some cool pics
-          </a>
-        </li>
-      </ul>
+    <div id="social" class="window-section dark-blue">
+      <div class="window-header">
+        <h2>Connect with me</h2>
+        <svg class="icon" role="presentation" aria-hidden="true">
+          <use href="/icons.svg#social-icon"></use>
+        </svg>
+      </div>
+      <div class="window-body">
+        <p>Let me know what's goin on, how you feelin?</p>
+        <ul>
+          <li>
+            <a href="https://github.com/vitejs/vite" target="_blank">
+              <svg class="button-icon" role="presentation" aria-hidden="true">
+                <use href="/icons.svg#github-icon"></use>
+              </svg>
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://chat.vite.dev/" target="_blank">
+              <svg class="button-icon" role="presentation" aria-hidden="true">
+                <use href="/icons.svg#discord-icon"></use>
+              </svg>
+              Discord
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/vite_js" target="_blank">
+              <svg class="button-icon" role="presentation" aria-hidden="true">
+              </svg>
+              Form
+            </a>
+          </li>
+          <li>
+            <a href="https://bsky.app/profile/vite.dev" target="_blank">
+              <svg class="button-icon" role="presentation" aria-hidden="true">
+              </svg>
+              Pics
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
+
+  <img :src="ratFace" width="200" class="rat-face-graphic" />
 
   <div class="ticks"></div>
   <section id="spacer"></section>
