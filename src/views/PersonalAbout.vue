@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
   <div class="about-page">
     <h1>About Personal</h1>

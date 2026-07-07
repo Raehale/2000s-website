@@ -5,7 +5,7 @@ import PersonalAbout from '../views/PersonalAbout.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/about-personal', component: PersonalAbout }
+  { path: '/personal-about', component: PersonalAbout }
 ];
 
 const router = createRouter({
