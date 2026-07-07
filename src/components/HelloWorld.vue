@@ -65,7 +65,7 @@ const count = ref(0)
         <p>Let me know what's goin on, how you feelin?</p>
         <ul>
           <li>
-            <a href="https://github.com/vitejs/vite" target="_blank">
+            <a href="https://github.com/Raehale" aria-label="Rae Haley's Github Profile" target="_blank">
               <svg class="button-icon" role="presentation" aria-hidden="true">
                 <use href="/icons.svg#github-icon"></use>
               </svg>
@@ -73,11 +73,11 @@ const count = ref(0)
             </a>
           </li>
           <li>
-            <a href="https://chat.vite.dev/" target="_blank">
+            <a href="https://www.linkedin.com/in/rae-haley-b30239215/" aria-label="Rae Haley's LinkedIn Profile" target="_blank">
               <svg class="button-icon" role="presentation" aria-hidden="true">
-                <use href="/icons.svg#discord-icon"></use>
+                <use href="/icons.svg#linkedin-icon"></use>
               </svg>
-              Discord
+              LinkedIn
             </a>
           </li>
           <li>
