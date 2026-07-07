@@ -1,10 +1,11 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 import viteLogo from '../assets/vite.svg'
 import vueLogo from '../assets/vue.svg'
 import sparkleCoffeeRat from '../assets/sparkleCoffeeRat.gif';
 import purpleCd from '../assets/purple-cd.png';
 import ratFace from '../assets/purple-rat-face.png';
+import WindowSection from '../components/WindowSection.vue';
 
 const count = ref(0)
 </script>
@@ -12,92 +13,45 @@ const count = ref(0)
 <template>
   <img :src="purpleCd" width="400" class="cd-graphic" />
 
-  <section id="center">
+  <!-- <section id="center">
     <div class="hero">
-      <!-- TODO:: rat graphic here, sparkly one -->
       <img :src="sparkleCoffeeRat" width="170" />
     </div>
     <div>
       <h1>Rae's Website</h1>
       <p>I never made a cool early 2000s website so I am fulfillying that dream now.</p>
     </div>
-    <!-- TODO:: Make this button do smthin else -->
     <button type="button" class="counter" @click="count++">
       Count is {{ count }}
     </button>
-  </section>
+  </section> -->
 
-  <div class="ticks"></div>
+  <!-- <div class="ticks"></div> -->
 
-  <section id="next-steps">
-    <div id="docs" class="window-section light-pink">
-      <div class="window-header">
-        <h2>About Me</h2>
-        <svg class="icon" role="presentation" aria-hidden="true">
-          <use href="/icons.svg#social-icon"></use>
-        </svg>
-      </div>
-      <!-- TODO:: that sucks -->
-       <div class="window-body">
-        <p>My personal and professional thingies,, like stuffs.</p>
-        <ul>
-          <li>
-            <a href="https://vite.dev/" target="_blank">
-              Personal
-            </a>
-          </li>
-          <li>
-            <a href="https://vuejs.org/" target="_blank">
-              Professional
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div id="social" class="window-section dark-blue">
-      <div class="window-header">
-        <h2>Connect with me</h2>
-        <svg class="icon" role="presentation" aria-hidden="true">
-          <use href="/icons.svg#social-icon"></use>
-        </svg>
-      </div>
-      <div class="window-body">
-        <p>Let me know what's goin on, how you feelin?</p>
-        <ul>
-          <li>
-            <a href="https://github.com/vitejs/vite" target="_blank">
-              <svg class="button-icon" role="presentation" aria-hidden="true">
-                <use href="/icons.svg#github-icon"></use>
-              </svg>
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://chat.vite.dev/" target="_blank">
-              <svg class="button-icon" role="presentation" aria-hidden="true">
-                <use href="/icons.svg#discord-icon"></use>
-              </svg>
-              Discord
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/vite_js" target="_blank">
-              <svg class="button-icon" role="presentation" aria-hidden="true">
-              </svg>
-              Form
-            </a>
-          </li>
-          <li>
-            <a href="https://bsky.app/profile/vite.dev" target="_blank">
-              <svg class="button-icon" role="presentation" aria-hidden="true">
-              </svg>
-              Pics
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <!-- <section id="next-steps">
+    <WindowSection 
+      title="About Me"
+      icon="user"
+      text="My personal and professional thingies,, like stuffs."
+      color-class="light-pink"
+      :buttons="[
+        { text: 'Personal', link: '/personal-about' },
+        { text: 'Professional', link: '/professional-about' }
+      ]"
+    />
+    <WindowSection
+      title="Connect with Me"
+      icon="social"
+      text="Let me know what's goin on, how you feelin?"
+      color-class="dark-blue"
+      :buttons="[
+        { text: 'GitHub', link: 'https://github.com/Raehale' },
+        { text: 'LinkedIn', link: 'https://www.linkedin.com/in/rae-haley-b30239215/' },
+        { text: 'Form', link: '/contact-me' },
+        { text: 'Pics', link: '/look-at-this-photograph' }
+      ]"
+    />
+  </section> -->
 
   <img :src="ratFace" width="200" class="rat-face-graphic" />
 
