@@ -5,7 +5,7 @@
     <menu>
         <ul>
             <li>Home</li>
-            <li>Black</li>
+            <li>About</li>
             <li>Pink</li>
         </ul>
     </menu>

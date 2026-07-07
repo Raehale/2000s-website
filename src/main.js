@@ -1,10 +1,17 @@
+import './style.css';
+// import './assets/variables.css';
+import router from './router';
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router';
-import './style.css';
 
-const app = createApp(App);
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faHandSpock, faPenRuler, faHeadphones, faTree, faBookOpen, faMountain } from '@fortawesome/free-solid-svg-icons';
+// library.add(faHandSpock, faPenRuler, faHeadphones, faTree, faBookOpen, faMountain);
 
-app.use(router);
+const vueApp = createApp(App);
 
-app.mount('#app');
+// vueApp.component('font-awesome-icon', FontAwesomeIcon);
+
+vueApp.use(router);
+vueApp.mount('#app');
