@@ -19,17 +19,15 @@
         margin: 0;
         padding-top: .5em;
         padding-bottom: .5em;
-
-        ul {
+    }
+    menu ul {
             display: flex;
             justify-content: space-between;
             margin-left: 0;
             padding-left: 0 !important;
-
-            li {
-                margin-left: 0;
-                list-style-type: none;
-            }
         }
+    menu ul li {
+        margin-left: 0;
+        list-style-type: none;
     }
 </style>
