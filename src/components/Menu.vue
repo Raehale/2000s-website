@@ -4,7 +4,7 @@
 <template>
     <menu>
         <ul>
-            <li>Home</li>
+            <li><a href="/">Home</a></li>
             <li>About</li>
             <li>Pink</li>
         </ul>
