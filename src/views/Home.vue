@@ -38,8 +38,8 @@
 			text="Let me know what's goin on, how you feelin?"
 			color-class="dark-blue"
 			:buttons="[
-				{ text: 'GitHub', link: 'https://github.com/Raehale' },
-				{ text: 'LinkedIn', link: 'https://www.linkedin.com/in/rae-haley-b30239215/' },
+				{ text: 'GitHub', link: 'https://github.com/Raehale', isExternal: true },
+				{ text: 'LinkedIn', link: 'https://www.linkedin.com/in/rae-haley-b30239215/', isExternal: true },
 				{ text: 'Form', link: '/contact-me' },
 				{ text: 'Pics', link: '/look-at-this-photograph' }
 			]"
