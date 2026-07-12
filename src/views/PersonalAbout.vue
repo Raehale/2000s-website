@@ -3,8 +3,7 @@
 
 <template>
   <div class="about-page">
-    <h1>About Personal</h1>
-    <p>This is a new page.</p>
+    <h1>About Me</h1>
   </div>
 </template>
 

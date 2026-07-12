@@ -28,8 +28,8 @@
 			text="My personal and professional thingies,, like stuffs."
 			color-class="light-pink"
 			:buttons="[
-				{ text: 'Personal', link: '/personal-about' },
-				{ text: 'Professional', link: '/professional-about' }
+				{ text: 'About Me', link: '/personal-about' },
+				{ text: 'Professional History', link: '/professional-about' }
 			]"
 		/>
 		<WindowSection
