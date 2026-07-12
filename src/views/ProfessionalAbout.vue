@@ -3,8 +3,7 @@
 
 <template>
   <div class="about-page">
-    <h1>About Professional</h1>
-    <p>This is a new page.</p>
+    <h1>Professional History</h1>
   </div>
 </template>
 
