@@ -5,8 +5,13 @@
     <menu>
         <ul>
             <li><a href="/">Home</a></li>
-            <li>About</li>
-            <li>Pink</li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">About <span class="arrow">&#9662;</span></a>
+                <ul class="submenu">
+                    <li><a href="/personal-about">Personal</a></li>
+                    <li><a href="/professional-about">Professional</a></li>
+                </ul>
+            </li>
         </ul>
     </menu>
     <div class="sparkle-header-banner"></div>
@@ -29,5 +34,17 @@
     menu ul li {
         margin-left: 0;
         list-style-type: none;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #240e2e;
+        list-style-type: none;
+        margin: 0;
+    }
+
+    .dropdown:hover .submenu {
+        display: block;
     }
 </style>
